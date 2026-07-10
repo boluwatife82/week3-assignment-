@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report an issue - IRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="brand">IRO <span>&middot;</span> Issues Reporting Outlet</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="report.html" class="active">Report an issue</a>
+    <a href="issues.html">View issues</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Report an issue</h2>
+  <p style="color: var(--ink-soft); margin-top: -8px;">Fill in the details below. Your report is added to the shared issues list.</p>
+
+  <div class="banner" id="successBanner">Your issue has been submitted. Thank you for reporting.</div>
+
+  <div class="form-card">
+    <form id="reportForm">
+      <label for="fullName">Full name</label>
+      <input type="text" id="fullName" placeholder="e.g. Ada Okafor" required>
+
+      <label>You are reporting as</label>
+      <div class="radio-row">
+        <label><input type="radio" name="respondentType" value="Student" checked> Student</label>
+        <label><input type="radio" name="respondentType" value="Indigene"> Indigene</label>
+      </div>
+
+      <label for="community">Community</label>
+      <select id="community" required>
+        <option value="Akungba">Akungba</option>
+        <option value="Iwaro">Iwaro</option>
+        <option value="Etioro">Etioro</option>
+        <option value="Ayegunle">Ayegunle</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="issueType">Issue type</label>
+      <select id="issueType" required>
+        <option value="Infrastructure">Infrastructure</option>
+        <option value="Security">Security</option>
+        <option value="Electricity">Electricity</option>
+        <option value="Water supply">Water supply</option>
+        <option value="Academic/Campus">Academic/Campus</option>
+        <option value="Health">Health</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="description">Describe the issue</label>
+      <textarea id="description" placeholder="What happened, where, and when?" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Submit report</button>
+      </div>
+      <div class="note">Reports are stored locally in this browser for demo purposes.</div>
+    </form>
+  </div>
+</div>
+
+<footer>IRO &mdash; CSC426 Mini Project &middot; Weekend 3 Submission</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

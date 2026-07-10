@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reported issues - IRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="brand">IRO <span>&middot;</span> Issues Reporting Outlet</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="report.html">Report an issue</a>
+    <a href="issues.html" class="active">View issues</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="toolbar">
+    <h2 style="margin:0;">Reported issues</h2>
+    <span class="stat-pill" id="countPill">0 issues reported</span>
+  </div>
+
+  <div id="issuesWrap"></div>
+</div>
+
+<footer>IRO &mdash; CSC426 Mini Project &middot; Weekend 3 Submission</footer>
+
+<script src="script.js"></script>
+<script>renderIssues();</script>
+</body>
+</html>
